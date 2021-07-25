@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-
+    public bool IsGirlOnly = true;
+    
     void Start()
     {
         var CapsuleCollider = this.transform.parent.gameObject.AddComponent<CapsuleCollider>();
