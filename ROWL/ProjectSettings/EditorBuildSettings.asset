@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Abandoned_Asylum/ROWL_Field.unity
+    guid: 75bd94a344e3241478c622f5d012f3e4
+  - enabled: 1
+    path: Assets/SampleScenes/Scenes/ResultScene.unity
+    guid: 94384fdc769915c4ebe6970103968613
+  - enabled: 1
+    path: Assets/SampleScenes/Scenes/StartScene.unity
+    guid: a8a843e8ebf029149954a08c2874dbff
   m_configObjects: {}

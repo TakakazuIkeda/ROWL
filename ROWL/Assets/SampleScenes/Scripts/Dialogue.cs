@@ -15,17 +15,13 @@ public class Dialogue : MonoBehaviour
     {
         this.gameObject.SetActive(true);
         DescriptionText.text = message;
+        StartCoroutine(DisapearDialog());
     }
 
-        // é©ìÆÇ≈è¡Ç¶ÇÈ
-    public class DestroyTimeout : MonoBehaviour
+    IEnumerator DisapearDialog()
     {
-        public float timer = 60.0f;
-        void Start()
-        {
-            Destroy(gameObject, timer);
-        }
+        yield return new WaitForSeconds(1f);
+        this.gameObject.SetActive(false);
     }
-
 }
 

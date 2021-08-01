@@ -197,7 +197,6 @@ GameObject:
   m_Component:
   - component: {fileID: 40876138}
   - component: {fileID: 40876139}
-  - component: {fileID: 40876140}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -238,19 +237,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DescriptionText: {fileID: 348913994}
---- !u!114 &40876140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40876137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e522c8d278917043871228fbed5fc4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 1
 --- !u!1 &47345018
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,7 +2454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8add29cd9b5117646bdc7dd54d7214b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsGirlOnly: 0
+  DoorOpenRestriction: 0
 --- !u!95 &759670936
 Animator:
   serializedVersion: 3
@@ -3592,6 +3578,18 @@ MonoBehaviour:
   GirlCharacter: {fileID: 850453876}
   BoyCharacter: {fileID: 1990417383}
   autoCam: {fileID: 1276439173}
+--- !u!114 &1276439178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276439172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99ee5fa14b95fb848bd1775dc1e0af48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1285749969
 GameObject:
   m_ObjectHideFlags: 0
@@ -3965,6 +3963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 40876139}
+  GameFlag: 1
 --- !u!1 &1469065971
 GameObject:
   m_ObjectHideFlags: 0
@@ -5990,3 +5989,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
+--- !u!1 &8606311150561899607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8604367122496853544, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
+  m_PrefabInstance: {fileID: 8606311150561899606}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8606311150561899608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8606311150561899607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8add29cd9b5117646bdc7dd54d7214b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorOpenRestriction: 2
