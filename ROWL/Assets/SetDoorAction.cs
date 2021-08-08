@@ -34,7 +34,7 @@ public class SetDoorAction : MonoBehaviour
                 OnlyTag = "BoyCharacter";
                 break;
             case DoorOpenRestriction.IsGirlOnly:
-                OnlyTag = "girlCharacter";
+                OnlyTag = "GirlCharacter";
                 break;
         }
     }
@@ -55,13 +55,16 @@ public class SetDoorAction : MonoBehaviour
                 notOnlyAICharacter.Stop = true;
                 return;
             }
-            if (!isOpen)
-            {
+        }
+        if (!isOpen)
+        {
                 isOpen = true;
                 animator.SetBool("IsOpen", isOpen);
-            }
+                SoundManager.Instance.PlaySESound("OpenDoor");
         }
     }
+    
+
     private void OnTriggerExit(Collider other)
     {
         if (ThisDoorOpenRestriction != DoorOpenRestriction.Invalide)
@@ -72,11 +75,14 @@ public class SetDoorAction : MonoBehaviour
             }
         }
         if (isOpen)
+        {
             if (notOnlyAICharacter != null)
             {
                 notOnlyAICharacter.Stop = false;
             }
-        isOpen = false;
-        animator.SetBool("IsOpen", isOpen);
+            isOpen = false;
+            animator.SetBool("IsOpen", isOpen);
+            SoundManager.Instance.PlaySESound("NotOpenDoor");
+        }
     }
 }
