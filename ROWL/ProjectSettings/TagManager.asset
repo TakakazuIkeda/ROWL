@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BoyCharacter
   - GirlCharacter
+  - Item
   layers:
   - Default
   - TransparentFX
