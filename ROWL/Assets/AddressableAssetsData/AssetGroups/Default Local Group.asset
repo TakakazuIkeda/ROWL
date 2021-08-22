@@ -35,6 +35,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: bda4f5e0b4bd24e48aa316043a76d17c
+    m_Address: Assets/MasterData/CooperationParam.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 11400000, guid: bda4f5e0b4bd24e48aa316043a76d17c, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: bda4f5e0b4bd24e48aa316043a76d17c, type: 2}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7eace899e1f862943b5e05d41b79b038, type: 2}
   m_SchemaSet:
